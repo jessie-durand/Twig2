@@ -15,12 +15,14 @@
 <body>
 <h1>{% block h1 %}Instruments de musique{% endblock %}</h1>
     <nav>
+      {% block nav %}
         <ul>
             <li>Accueil</li>
             <li><a href='product.php'>Les instruments de musique</a></li>
             <li>Contactez-nous !</li>
             <li>En savoir +</li>
         </ul>
+        {% endblock %}
     </nav>
     {% block content %}{% endblock %}
 </body>
